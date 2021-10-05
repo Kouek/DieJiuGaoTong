@@ -8,7 +8,7 @@
 
 &emsp;&emsp;“**有人免睇红灯，有人路口加塞，有人“四散”变道，有人逆行了还无欲让！**”对潮州的交通参与者而言，在日常出行的过程中，和**变道**有关的糟心事不少。在潮州大桥西出口，你是否经常和南堤路过来的司机“勾心斗角”？在潮汕公路各个路口，你是否经常和从左转道切入直行道的司机“切磋武艺”?
 
-|![ ](rsc-cmp/DieJiuDaiDao_LokGie.jpg)|![ ](rsc-cmp/DieJiuDaiDao_LokGie.gif)|
+|![ ](rsc/DieJiuDaiDao_LokGie.jpg)|![ ](rsc/DieJiuDaiDao_LokGie.gif)|
 |---|---|
 
 > 图：[潮州大桥的潮州大道出口处](https://map.qq.com/?l=f47ae1e87ac9b7429aeeddebac3aaca7)，下桥车流与南堤路汇入的车流经常“打架”
@@ -27,7 +27,7 @@
 
 - 车道分配不规律，司机无法预判前方路口的信息，更多的变道行为被积压在靠近路口的位置，形成堵点。
 
-![ ](rsc-cmp/UnpredictableShift.gif)
+![ ](rsc/UnpredictableShift.gif)
 
 > 图：由于左、右转专用道的存在，直行车流需要变道。变道对左起第二、三车道的车流产生影响，阻塞城市交通
 
@@ -38,7 +38,7 @@
 
 &emsp;&emsp;从揭阳回潮州的过程中，司机早已习惯只有最左边的车道是左转道，正当他想顺畅的通过第二个路口时，突然发现本车道变成了左转道，马上急刹加变道以避免违规。这样的操作，不仅阻塞了自己与隔壁车道的车流，更增大了发生事故的风险。
 
-![ ](rsc-cmp/UnpredictableShiftConsecutively.gif)
+![ ](rsc/UnpredictableShiftConsecutively.gif)
 
 > 图：连续的两个路口，由于左转道数目不一致，直行车流接连发生两次变道。两次变道分别对左起第二、三车道的车流产生影响，阻塞城市交通。
 
@@ -52,7 +52,7 @@
 
 |消减中央隔离带法|消减中央隔离带法（隔离带宽度不足）|中心线偏移法|
 |---|---|---|
-|![ ](rsc-cmp/CentralCut.jpg)|![ ](rsc-cmp/CentralCutWithShift.jpg)|![ ](rsc-cmp/Shift.jpg)|
+|![ ](rsc/CentralCut.jpg)|![ ](rsc/CentralCutWithShift.jpg)|![ ](rsc/Shift.jpg)|
 ||减小左侧车道宽度，以补足左转专用道所需宽度|减小非机动车道宽度，以较少的占地运用中心线偏移法|
 
 > 图源：GB 5768.3-2009 道路交通标志和标线 第3部分道路交通标线
@@ -63,13 +63,13 @@
 
 &emsp;&emsp;你想在前方路口直行，进入路口时选择哪一条车道都行；如果你想左转，就靠最左侧行驶；如果你想右转，就靠最右侧行驶。一切都是那么自然。
 
-![ ](rsc-cmp/PredictableShift.gif)
+![ ](rsc/PredictableShift.gif)
 
 > 图：通过消减中央隔离带开辟左转专用道，同时使用直行右转道代替右转专用道，可以减少各个方向车流的变道数。
 
 &emsp;&emsp;而在一些小型路口，**左、右转专用道的设置本就没有必要**。非要画蛇添足设置专用道，只会迫使司机蛇形走位。**这里点名2020年刚升级完毕的炮浮线**。炮浮线仅有三车道，且其主要车流为直行车流，却在有的路口被分配了左、直、右各一条专用道，实在是令人费解。
 
-|![ ](rsc-cmp/PaoPuLou1.jpg)|![ ](rsc-cmp/PaoPuLou0.jpg)|
+|![ ](rsc/PaoPuLou1.jpg)|![ ](rsc/PaoPuLou0.jpg)|
 |---|---|
 
 > 图：在仅有三车道且以直行车流为主的炮浮路，有多个路口将其中一车道设置为左、右转专用道，甚至存在仅有一条直行道的路口，且车道指示牌与地面指向箭头有矛盾。
@@ -84,13 +84,13 @@
 
 |标志|标线|
 |---|---|
-|![ ](rsc-cmp/sign.png)|![ ](rsc-cmp/mark.png)|
+|![ ](rsc/sign.png)|![ ](rsc/mark.png)|
 
 > 图源：GB 5768.3-2009 道路交通标志和标线 第3部分道路交通标线
 
 &emsp;&emsp;而在潮州，这些帮助司机预判的工具并不是那么好用。标线存在容易磨损、更新时难以完全覆盖的质量问题，因而经常不清晰、不可见甚至前后矛盾。**如枫春路体育馆路口前**，指向箭头前后矛盾的问题已存在良久。
 
-![ ](rsc-cmp/BangCungTiYokGueng.gif)
+![ ](rsc/BangCungTiYokGueng.gif)
 
 > 图：[枫春路体育馆路口](https://map.qq.com/?l=c216de85a94abc77eec1b697fab57dba)，前后两组指向箭头矛盾，使变道被积压在距离路口很近的位置。<br>
 > 图源：[【POV】潮州公交K1路全程前方展望](https://www.bilibili.com/video/BV1Th411172d?spm_id_from=333.788.b_765f64657363.2)
@@ -99,7 +99,7 @@
 
 |当前情况|优化结果|
 |---|---|
-|![ ](rsc-cmp/DieSuann0.gif)|![ ](rsc-cmp/DieSuann1.gif)|
+|![ ](rsc/DieSuann0.gif)|![ ](rsc/DieSuann1.gif)|
 |[潮汕公路绿榕南路口](https://map.qq.com/?l=7375c2879a34edf5a64d16ed90eeccaf)，车道数前后不一、中心线发生偏移的区域（红圈内）几乎没有引导车流的过渡标线，容易引发车流交汇，阻塞交通|①使用虚线将潮汕公路3条车道引导至3条直行专用道。<br>②使用短虚线（分歧线）标记开辟出来的左、右转专用道，提醒需要直行的司机不要误入。<br>③使用允许单侧变道线，约束主道、辅道的车流|
 
 > 图源：[【POV】潮州公交K1路全程前方展望](https://www.bilibili.com/video/BV1Th411172d?spm_id_from=333.788.b_765f64657363.2)
@@ -112,7 +112,7 @@
 
 |当前情况|优化结果|
 |---|---|
-|![ ](rsc-cmp/DieSuann0-1.gif)|![ ](rsc-cmp/DieSuann1-1.gif)|
+|![ ](rsc/DieSuann0-1.gif)|![ ](rsc/DieSuann1-1.gif)|
 |[潮汕公路绿榕南路口](https://map.qq.com/?l=7375c2879a34edf5a64d16ed90eeccaf)，使用悬臂式车道指示牌，司机很难将该指示牌与车道对应起来。|使用位于车道正上方的门架式车道指示牌，司机可以很容易地将指示牌与实际的车道对应起来。<br>门架式车道指示牌还能指示障碍物（如安全岛）的位置，提醒司机避让|
 
 > 图源：[【POV】潮州公交K1路全程前方展望](https://www.bilibili.com/video/BV1Th411172d?spm_id_from=333.788.b_765f64657363.2)
@@ -140,14 +140,14 @@
 
 |当前问题|优化方法|
 |---|---|
-|![ ](rsc-cmp/HangGangDuaGie.gif)||
+|![ ](rsc/HangGangDuaGie.gif)||
 |无需设置左、右转专用道的位置设置左、右转专用道，迫使直行车流变道。|不设置左、右转专用道，改设置直行左转道、直行右转道。|
 
 ### [潮枫路永护路口](https://map.qq.com/?l=a9936bf3e0e5ca2fbb962aecdca5f60f)
 
 |当前问题|优化方法|
 |---|---|
-|![ ](rsc-cmp/DieBang.gif)|![ ](rsc-cmp/DieBang1.jpg)|
+|![ ](rsc/DieBang.gif)|![ ](rsc/DieBang1.jpg)|
 |从潮枫路进入路口的直行车道数为2，离开路口进入西河路的车道数为1。<br>1小于2，车道变窄导致的变道被积压在路口中心，阻塞多个方向的车流。|如上设置车道，将车道变窄导致的变道提前到潮枫路路段内。|
 
 类似问题：
@@ -159,14 +159,14 @@
 
 |当前问题|优化方法|
 |---|---|
-|![ ](rsc-cmp/DieSuann0-2.gif)||
+|![ ](rsc/DieSuann0-2.gif)||
 |左、右转专用道的设置不规律，无法预判，导致变道被积压在靠近路口的位置。|按照[总结](##总结)的方法优化。|
 
 ### [潮汕公路绿榕南路口](https://map.qq.com/?l=7375c2879a34edf5a64d16ed90eeccaf)
 
 |当前问题|优化方法|
 |---|---|
-|![ ](rsc-cmp/DieSuann0-1.gif)|![ ](rsc-cmp/DieSuann1-1.gif)|
+|![ ](rsc/DieSuann0-1.gif)|![ ](rsc/DieSuann1-1.gif)|
 |使用悬臂式车道指示牌，司机很难将该指示牌与车道对应起来。|使用位于车道正上方的门架式车道指示牌，司机可以很容易地将指示牌与实际的车道对应起来。<br>门架式车道指示牌还能指示障碍物（如安全岛）的位置，提醒司机避让|
-|![ ](rsc-cmp/DieSuann0.gif)|![ ](rsc-cmp/DieSuann1.gif)|
+|![ ](rsc/DieSuann0.gif)|![ ](rsc/DieSuann1.gif)|
 |车道数前后不一、中心线发生偏移的区域（红圈内）几乎没有引导车流的过渡标线，容易引发车流交汇，阻塞交通|①使用虚线将潮汕公路3条车道引导至3条直行专用道。<br>②使用短虚线（分歧线）标记开辟出来的左、右转专用道，提醒需要直行的司机不要误入。<br>③使用允许单侧变道线，约束主道、辅道的车流|
