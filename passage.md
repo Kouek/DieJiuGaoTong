@@ -1,55 +1,60 @@
-# 【图解交通】潮州交通要畅通，软件问题着{烦恼|Hueng Lo}
+# 【图解交通】潮州交通要畅通，软件问题{着烦恼|Dieh Hueng Lo}
 
 ## 前言
 
 自2012年以来，潮州交通基础设施得到了兼具深度与广度的发展。
 
 - 对外，高铁潮汕站、揭阳潮汕机场、甬莞高速的开通，让潮州摆脱了**省尾国角**的称号。
-- 对内，潮州大桥、东西溪大桥（如意大桥）、炮浮线（S505）、S233线、潮汕环线高速的开通，城区大小道路的修缮与黑底化，大大缓解了市域内的**结构性堵塞问题**。
+- 对内，潮州大桥、东西溪大桥（如意大桥）、炮浮线（S505）、S233线、潮汕环线高速的开通，以及城区大小道路的修缮与黑底化，大大缓解了市域内的**结构性堵塞问题**。
 
-**硬件**提升了，与硬件配套的**软件**又如何呢？在笔者看来，**软件缺陷**已经成为**潮州道路交通**发展的瓶颈。这篇文章，笔者将以点带面，从**交通软件**影响车流总体**变道**，进而影响**交通通畅程度**的角度，来说清楚潮州的道路交通软件“哪里不行？”和“要怎么优化？”。
+**硬件**提升了，与硬件配套的**软件**又如何呢？
+
+在笔者看来，**软件缺陷**已经成为**潮州道路交通**发展的瓶颈。这篇文章，笔者将以点带面，从**交通软件**影响**变道**，进而影响**交通通畅**的角度，来讲清楚潮州的道路交通软件“哪里不行”、“要怎么优化”。
 
 ## 变道多寡影响道路交通畅通
 
 在潮州，与**变道**有关的麻烦事不少：
 
-- 在[潮州大桥大道出口](https://map.qq.com/?l=51489e755560c35dc758d1ff62722274)，**潮州大桥的下桥车流**与**南堤路汇入潮州大道的车流**经常需要合流，以“争抢”车道使用权，从而优先通过前方的红绿灯路口。
+- 在[潮州大桥大道出口](https://map.qq.com/?l=51489e755560c35dc758d1ff62722274)，**潮州大桥的下桥车流**与**南堤路汇入潮州大道的车流**经常需要“争抢”车道使用权，从而优先通过前方的红绿灯路口。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieJiuDaiDao_LokGie.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieJiuDaiDao_LokGie.gif)
 
-- 在潮汕公路大多数路口，**直行车流**经常需要避让从**最左侧车道**和**最右侧车道**“切入”**直行车道**的车辆。<span id="shift_once"></span>
+- 在潮汕公路大多数路口，**最左侧车道**和**最右侧车道**“的**直行车流**因为本车道无法直行，经常需要向中间**变道**，与**中间车道**的车流产生冲突。<span id="shift_once"></span>
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/UnpredictableShift.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/UnpredictableShift.gif)
 
-- 在新风路（安揭公路），**左转专用道**的数目是捉摸不定的。经常有**直行车道**突然变成**左转专用道**的情况。为此，司机被迫向右变道，变道造成的影响涉及3车道之多。
+- 在新风路（安揭公路），**左转专用道**的数目是捉摸不定的，**直行车道**突然变成**左转专用道**的设计并不罕见。
+  - 为此，司机被迫向右侧变道，变道造成的影响涉及3车道之多。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/UnpredictableShiftConsecutively.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/UnpredictableShiftConsecutively.gif)
 
-上面的这些**变道**让顺畅的行车充满了顿挫感，令人十分不快。更何况在日常驾驶中，还有不少加塞、压线行驶、不打灯变道等违规现象让人**血压上升**。既然变道是如此的烦人，能不能让司机不用变道呢？
+上述的**变道**让本来顺畅的行车充满了顿挫感，令人十分不快。更何况在日常驾驶中，还有不少**加塞、压线行驶、不打灯变道等违规现象**让司机朋友们血压飙升。
+
+既然**变道**是如此的烦人，能不能让驾驶免于**变道**呢？
 
 ### 变道烦人，但不可或缺
 
-在现代道路交通中，**多车道**的设计已经成为常态。有了多车道，在路口处给**不同车道**分配**不同的行驶方向**就成了非常自然的设计。由于不同车道的行驶方向受到限制，司机在驶入路口前就必须通过**变道**来**选择正确的车道**，这就是**变道**不可或缺的原因之一。
+在现代道路交通中，**多车道**的设计已经成为常态。有了**多条车道**，在路口处给**不同的车道**分配**不同的行驶方向**就成了非常自然的设计。由于不同车道的行驶方向受到限制，在驶入路口前，司机就必须通过**变道**来**选择正确的车道**，这就是**变道**不可或缺的原因之一。
 
-- 图中，左转车辆、直行车辆通过**变道**来选择正确的车道。
+- 下图中，左转车辆、直行车辆通过**变道**来选择正确的车道。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/Shift.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/Shift.gif)
 
 ### 变道越多，交通越堵
 
-对驾驶员个体而言，不管是自己**变道**还是应对他人的**变道**，都是一件心理负担比较重的事情。而对总体的交通而言，**变道**也会起到阻塞交通的作用。这是因为一次**合法合规**的**变道**，有以下具体的规定：
+对驾驶员个体而言，不管是自己**变道**还是应对他人的**变道**，都是一件心理负担比较重的事情。而对总体的交通而言，**变道**也会起到阻塞交通的作用。这是因为一次**合法合规**的**变道**，需要经过以下复杂、耗时的流程：
 
-1. 驾驶员打转向灯，发出**变道请求信号**，观察后视镜并等待转向灯**闪烁至少3秒**。
-2. 若驶入的**目标车道无后车**，或后车发出**允许变道信号**（一般以后车减速为信号），则可以**变道**。
-3. 若**目标车道有后车**且后车**拒绝变道**（一般以后车亮灯、加速为信号），则继续等待。
+1. **变道车辆**打转向灯，发出**变道请求信号**，观察后视镜并等待转向灯**闪烁至少3秒**。
+2. 若驶入的**目标车道无后车**，或**后车**发出**允许变道信号**（一般以后车减速为信号），则可以**变道**。
+3. 若**目标车道有后车**且**后车拒绝变道**（一般以后车闪烁前灯、加速为信号），则应继续等待。
 
-- 图中，左数第二车道的车辆历经了 **发出变道请求 - 被后车拒绝 - 继续等待 - 被后车接受 - 成功变道** 的流程。
+- 下图中，演示了 **发出变道请求 - 被后车拒绝 - 继续等待 - 被后车接受 - 成功变道** 的流程。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/ShiftIsCostly.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/ShiftIsCostly.gif)
 
-在上述过程中，若**变道车辆**一直被拒绝，则必然会放慢车速进行等待（若不减速，会驶入实线区域，将无法完成变道），从而阻塞**本车道的车流**。若**变道成功**，则可能使**目标车道的后车**减速，从而阻塞**目标车道的车流**。
+在上述过程中，若**变道车辆**一直被拒绝，则必然会放慢车速进行等待（若不减速，会驶入实线区域，将无法完成变道），从而**阻塞本车道的车流**。若**变道成功**，则可能使**目标车道的后车**减速，从而**阻塞目标车道的车流**。
 
-可以说，多一次变道，道路就多一分堵塞的风险。
+不管怎么变，都可能阻塞交通。可以说，多一次变道，道路就多一分堵塞的风险。
 
 ### 变道越集中，交通越堵
 
@@ -59,12 +64,12 @@
 
 这里说*可能*，是因为若**变道车辆**与**目标车道后车**配合得好，也可以做到**无减速变道**。这样的配合，不仅要求双方有良好的驾驶意识、驾驶技巧，还需要留给**变道车辆**足够的操作空间。
 
-换言之，如果**变道**在靠近路口的位置**集中**，司机操作的空间不足，几乎所有**变道**都会导致减速，堵塞也就不可避免了。而如果让**变道**从距路口很远的位置开始**分散**，就能缓解**变道**对交通的负作用。
+换言之，如果**变道**在靠近路口的位置**集中**，则因为司机的操作空间不足，几乎所有**变道**都会导致减速，堵塞也就不可避免了。而如果让**变道**从距路口很远的位置开始**分散**，就能缓解**变道**对交通的负作用。
 
-那我们要如何从**软件**层面尽可能地**减少变道**，或者将**变道**尽可能地**分散**开来呢？我们将对以下两个问题进行分析：
+那我们要如何从**软件**层面尽可能地**减少变道**，或者将**变道**尽可能地**分散**开来呢？笔者认为，主要应该考虑以下两种**软件**的科学性：
 
-1. 各车道行驶方向的分配方式是否科学？
-2. 指示各车道行驶方向的标志、标线是否科学？
+1. 各车道**行驶方向的分配方式**是否科学？
+2. 指示各车道行驶方向的**标志、标线**是否科学？
 
 ## 不科学的行驶方向分配方式，阻塞潮州道路交通
 
@@ -77,13 +82,13 @@
 - 在以**直行车流**为主的炮浮线两路口（[斗文路口](https://map.qq.com/?l=69f510890bd4d709b66a7924ba9fc354)和[花宫路口](https://map.qq.com/?l=99dd7e1e4b4e3fa4fe5fc6257fb9aebd)），竟然为3车道分配了 **左 - 直 - 直** 和 **直 - 直 - 右** 的行驶方向。
   - 且花宫路口的**标线**（地面指示箭头）与**标志**（车道指示牌）还是矛盾的。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/PaoPuLou1.jpg)
+![图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/PaoPuLou1.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/PaoPuLou0.jpg)
+![图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/PaoPuLou0.jpg)
 
 - 同样的问题出现在[韩江大桥东出口](https://map.qq.com/?l=8ef7e61b192f8853c6112968907c5f4f)，这里设置的**右转专用道**毫无必要。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/HangGangDuaGie.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/HangGangDuaGie.gif)
 
 要解决**画蛇添足**的问题，将相应路口的**左、右转专用道**更改为**直行左转道、直行右转道**即可。
 
@@ -93,11 +98,11 @@
 
 - 除左转车流极小的情况，应积极**开辟**左转专用道。
 - 若 有中央隔离带 且 中央隔离带宽度足够，使用**中央隔离带消减法**开辟左转专用道。
-- ![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/CentralCut.jpg)
+- ![图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/CentralCut.jpg)
 - 若 有中央隔离带 但 中央隔离带宽度不足，使用**中央隔离带消减法**外加**缩减车道宽度**的做法开辟左转专用道。
-- ![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/CentralCutWithShift.jpg)
+- ![图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/CentralCutWithShift.jpg)
 - 若 无中央隔离带 或 经过上面的操作，中央隔离带宽度仍不足，使用**中心线偏移法**开辟左转专用道。
-- ![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/Shift.jpg)
+- ![图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/Shift.jpg)
 
 上述方法是非常科学的，因为**左、右转专用道**是**开辟**出来的，而不是道路原来的车道。得益于此，
 
@@ -111,14 +116,14 @@
 - 所有路口的行驶方向分配方式都能**预先知晓**，就算有**变道**也可以被**分散**开来。
 - 下图展示了上述方法的科学之处——零变道，零冲突。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/PredictableShift.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/PredictableShift.gif)
 
 上述方法，只需要缩减**中央隔离带**、**非机动车道**、**人行道**或**路侧绿化带**的空间即可应用，不需要拆除路侧的建筑，适用范围较广。但在潮州，按照《**国标**》设置的路口很少。
 
 - 如炮浮线、潮汕公路、新风路等，宁可在道路中央或两侧设置绿化带，也不按照《**国标**》推荐的方法来分配**左、右转专用道**。
   - 造成行驶方向的分配毫无规律，导致**变道增加、积压**。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieSuann0-2.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieSuann0-2.gif)
 
 ### 问题三：入不敷出
 
@@ -129,15 +134,15 @@
 - 在[潮枫路永护路口](https://map.qq.com/?l=7f96a66bf4f9c07c8e73748897418e41)，离开**潮枫路**的**直行车道**有2条，对应进入**西河路**的车道仅有1条。这意味着车流必须在**路口中间**完成**合流变道**。
   - 若**合流**过程发生堵塞，堵塞发生在**路口内**，必定影响其他道路（西榕路、永护路）的正常通行。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieBang.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieBang.gif)
 
 类似的问题还出现在[东山路卧石路口](https://map.qq.com/?l=c9c7bdac1837c50116e7f16ffeba3f3b)（东往西方向）。我们可以将**进入路口的车道数**大于**离开路口车道数**的问题称为**入不敷出**问题（虽然这里出入的语义颠倒了）。
 
 要解决**入不敷出**的问题，应该适当减少车道。
 
-- 将**潮枫路**进入路口的**直行车道**由2削减为1，可以解决上述问题。
+- 将**潮枫路**进入路口的**直行车道**由2减少为1，可以解决上述问题。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieBang1.jpg)
+![图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieBang1.jpg)
 
 - 另一个方法是将**西河路**进入路口的**左转专用道**取消，使得离开路口进入**西河路**的车道数为2。
 
@@ -147,13 +152,15 @@
 
 > 如果让**变道**从距路口很远的位置开始**分散**，就能缓解**变道**对交通的负作用。
 
-如何**分散变道**呢？**提前告知**司机行驶方向的分配情况是最重要的。如何**提前告知**呢？应用道路交通**标线**和**标志**是很好的方法。
+如何**分散变道**呢？**提前告知**司机行驶方向的分配情况是最重要的。
+
+如何**提前告知**呢？使用道路交通**标线**和**标志**是很自然的方法。
 
 在《**国标**》中，对**标志**和**标线**做了明确的区分。我们可以简单地认为，施划在地面的是**标线**，贴附、悬挂在高处的是**标志**。
 
 | 标线                                                         | 标志                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/mark.png) | ![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/sign.png) |
+| ![图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/mark.png) | ![图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/sign.png) |
 
 笔者认为，潮州的道路交通**标线**、**标志**，至少存在以下三个问题：
 
@@ -166,12 +173,12 @@
 - 在[枫春路体育馆路口](https://map.qq.com/?l=5fbc20b5b349478aa6b2d842c863ba53)，就存在着**标线**前后矛盾，却迟迟没有纠正的问题。
   - 第一次出现的**指示箭头**是 **直 - 直 - 直 - 直**，而最终路口的**指示箭头**却是 **左 - 直左 - 直 - 右**。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/BangCungTiYokGueng.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/BangCungTiYokGueng.gif)
 
 - 在[新风路绿榕路口]()，也存在着**标线**错误的问题。
   - 该车道为**右转专用道**，但路面上的**指示箭头**却指示为**直行右转道**。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/SingHuangLou.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/SingHuangLou.gif)
 
 ### 问题二：标线的设计问题
 
@@ -182,7 +189,7 @@
 - 下图展示了应用**中央隔离带消减法**和**中心线偏移法**后出现的**车道数量变化**和**车道偏移**。
   - 所有车道整体向行驶方向的右侧偏移，且从原来的主路3车道+辅路1车道变为5车道。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/MidShiftCauseShift.png)
+![图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/MidShiftCauseShift.png)
 
 如果不针对这种变化进行引导，会导致两股车流在**可选择车道充足**的情况下，仍然互相“争抢”**同一车道**的问题。
 
@@ -190,15 +197,15 @@
   - 由于车道向右偏移，左起第二、三车道的**直行车流**各自有两个车道可供选择。
   - 若**两股直行车流**都选择同一车道，则可能发生冲突。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/LaneShiftCauseConflict.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/LaneShiftCauseConflict.gif)
 
 为了衔接这种变化，引导车流在变化中选择正确的车道，**过渡标线**变得非常重要。但在潮州，**过渡标线**的缺位问题还是非常严重的。
 
-- 在[潮汕公路绿榕路口](https://map.qq.com/?l=d07576b812a73311942f4a3720bdfc27)，红圈圈出来的部分缺乏引导车流的**过渡标线**。
+- 在[潮汕公路绿榕路口](https://map.qq.com/?l=d07576b812a73311942f4a3720bdfc27)，红圈圈出来的部分缺少引导车流的**过渡标线**。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieSuann0.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieSuann0.gif)
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieSuann0-FromUp.png)
+![图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieSuann0-FromUp.png)
 
 - 要解决这个问题，施划如下的**过渡标线**即可。
   - **车道边线**整体向右侧偏移，引导**潮汕公路**的3车道进入**直行车道**。
@@ -206,9 +213,9 @@
   - 标线②：使用**短虚线**标志**分歧**（即行驶方向的改变），用于**分散变道**。
   - 标线③：使用**单侧变道线**限制主路与辅路的车流，用于**减少交汇**。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieSuann1.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieSuann1.gif)
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieSuann1-FromUp.png)
+![图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieSuann1-FromUp.png)
 
 ### 问题三：标志的设计问题
 
@@ -226,12 +233,37 @@
   - 由于牌小路宽，司机很难将**标志中的车道**与**路面上的车道**对应起来，无法快速、准确地获知**自己所在的车道**、**自己的目标车道**等信息。
   - 这导致不熟悉路况的车辆在此减速观察，阻塞本车道的车流，从而可能造成堵塞。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieSuann0-1.gif)
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieSuann0-1.gif)
 
-- 要解决这个问题，改用**门架式车道指示牌**即可。
-  - **标志中的车道**与**路面上的车道**位于同一竖直线的设计，让司机能快速、准确地获知**自己所在的车道**、**自己的目标车道**等信息。
+要解决这个问题，改用**门架式车道指示牌**即可。
 
-![](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieSuann1-1.gif)
+**标志中的车道**与**路面上的车道**位于同一竖直线的设计，让司机能快速、准确地获知**自己所在的车道**、**自己的目标车道**等信息。
+
+- 下图展示了改用**门架式车道指示牌**的效果。
+
+![动图](https://cdn.jsdelivr.net/gh/Kouek/DieJiuGaoTong/rsc/DieSuann1-1.gif)
 
 ## 总结
+
+综上，在潮州，道路交通的**软件缺陷**还是非常严重的。其主要表现为：
+
+- 各车道**行驶方向的分配方式**不科学。
+- 指示各车道行驶方向的**标志、标线**不科学。
+
+其带来的问题是：
+
+- **变道**的增加。
+- **变道**的集中（积压）。
+
+其带来的影响是：
+
+- 对**交通通畅**产生负面影响。
+- 可能成为滋生加塞、压线行驶、不打灯变道等**交通违法行为**的温床。
+- 对**城市形象**产生负面影响。
+
+## 参考文献
+
+\[1\] [道路交通标志和标线 第3部分：道路交通标线](http://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D7C970D3A7E05397BE0A0AB82A)
+
+\[2\] [ 道路交通标志和标线 第2部分：道路交通标志](http://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D7C96FD3A7E05397BE0A0AB82A)
 
